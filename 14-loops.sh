@@ -23,6 +23,6 @@ VALIDATE() {
 for package in $@ #mysql, nodejs,nginx
 do
    dnf install $package -y &>>$LOGS_FILE
-   validate $?  "$package installtion"
+   VALIDATE $?  "$package installtion"
 done
 
